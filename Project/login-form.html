@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Login Form -->
+    <div class="login-system" id="signIn">
+        <h2>Login</h2>
+        <form action="">
+            <div class="form-group">
+                <input type="email" id="loginEmail" required>
+                <label for="loginEmail">Email</label>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" required>
+                <label for="password">Password</label>
+                <i id="loginPassword" class="fa-solid fa-eye"></i>
+            </div>
+            <p><input type="checkbox"> Remember Me <a href="#">Forget Password</a></p>
+
+            <input id="btn" type="submit" value="Login">
+
+            <p>Don't have an account? <a href="#" id="signUpButton">Register</a></p>
+        </form>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="login-system" id="signup" style="display:none;">
+        <h2>SIGNUP</h2>
+        <form action="">
+            <div class="form-group">
+                <input type="email" id="signupEmail" required>
+                <label for="signupEmail">Email</label>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="form-group">
+                <input type="text" id="firstName" required>
+                <label for="firstName">First Name</label>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="form-group">
+                <input type="text" id="lastName" required>
+                <label for="lastName">Last Name</label>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="form-group">
+                <input type="password" id="passwordCreate" required>
+                <label for="passwordCreate">Password</label>
+                <i id="loginPasswordCreate" class="fa-solid fa-eye"></i>
+            </div>
+            <input id="btn" type="submit" value="Sign Up">
+
+            <p>Already have an account? <a href="#" id="signInButton">Login</a></p>
+        </form>
+    </div>
+
+    <script src="/js/login-system.js"></script>
+</body>
+
+</html>
